@@ -12,10 +12,10 @@ LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
-        echo -e "installing MySQL ... $R FAILURE"
+        echo -e "$2 ... $R FAILURE"
         exit 1
     else
-        echo -e "installing MySQL ... $G SUCCESS"
+        echo -e "$2 ... $G SUCCESS"
     fi
 }
 
